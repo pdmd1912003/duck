@@ -1,106 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 :root{
-    --primary-color: #FF9933; 
+    --primary-color: #f2726a;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body{
     height: 100vh;
-    background:linear-gradient(to right, #b92b27, #1565c0);
+    background:linear-gradient(#fc5c7d, #6a82fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Poppins";
+    color:white;
 }
 
 .card{
-    margin: 120px auto;
-    width: 320px;
+    background: #242628;
+    width: 300px;
     height: 400px;
-    background: rgb(29, 137, 145);
-    padding: 20px;
-    border-radius: 15px;
-    color: white;
-    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
 }
-.card_heart, .card_cart{
-    font-size: 25px;
-    position: absolute;
-    left: 20px;
-    top: 15px  
-}
-
-.card_cart{
-    left: unset;
-    right: 20px;
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    object-position: center;
+  
 }
 .card_img{
-    width: 90%;
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 auto;
+    transform: translateY(25px);
     transition: 0.5s;
 }
-.card_img img{
+.card h2{
+    margin-top: 35px;
+}
+.card p{
+    color:var(--primary-color);
+}
+.card a{
+    text-decoration: none;
+}
+.card_social{
+    margin: 25px 0;
+}
+.card_social a {
+    color: white;
+    margin: 20px 25px;
+}
+.card_social a:hover{
+    color: #f2726a;
+}
+.card button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card button:hover{
+    background: #f2726a;
+}
+.card_img:hover{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-.card_price{
-    transition: 0.5s;
-}
-.card_title, .card_price{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.5s;
-}
-.card_title{
-    color: var(--primary-color);
-    transition: 0.5s;
-}
-.card_size{
-    display:flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.card_size span {
-    padding: 1px 10px;
-    background: #FF9966;
-    color:black;
-    border-radius: 5px;
-    margin: 0 5px;
-}
-.card_action button{
-    background: var(--primary-color);
+    border-radius: unset;
+    transform: unset;
     border: none;
-    outline: none;
-    color:white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
+    
+    
 }
-.card:hover .card_img{
-    transform: translateY(-80px) rotate(-30deg);
-}
-.card:hover .card_title{
-    transform: translate(-75px,-72px) ;
-}
-.card:hover .card_price{
-    transform:translate(-112px,-72px);
-}
-.card_size{
-    margin-top: 150px;
-}
-.card_size,.card_action{
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-.card:hover .card_size,
-.card:hover .card_action{
-    visibility: visible;
-    opacity: 100;
-}
-.card:hover .card_size{
-    margin-top: -30px;
-}
+
