@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    margin: auto;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    margin: auto;
+}
+
+#container {
+
+}
+
+#header {
+    height: 100px;
+    background-color: black;
+}
+.logo {
+    width: 100px;
+    float: left;
+    margin: 0 100px;
+    border-radius: 50%;
+}
+
+#top {
+}
+
+#top li {
+    display: inline-block;
+}
+
+#top li a {
+    color:#fff;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 100px;
+    padding: 0 50px;
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    transition: 0.25s;
+}
+
+#top li:hover a{
+    color:black;
+    background-color: white;
+}
+
+#top .subtop {
+    display: none;
+}
+#banner  {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color:wheat;
+    margin-bottom: 30px;
+    
+}
+#contact{
+    color:black;
+    background-color: #ccc;
+}
+
+.banner{
+    width: 100%;
+    height: 40vh;
+    background: url(../img/store.png) no-repeat;
+    background-size: cover;
+    top:30px;
+    position: relative;
+    top: 0;
+    float: left;
+}
+
+.quote{
+    width: 30%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(235, 130, 11, 0.932);
+    position: absolute;
+    margin-top: 30px;
+    color: wheat;
+    border-radius: 5px;
+}
+
+#content{
+    float: left;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    width: 50%;
+    height: 35vh;
+    color: orange;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.box{
+    margin-top: 20px;
+
+}
+
+
+
+#image img{
+    float:right;
+    width: 30%;
+    margin-right: 200px;
+}
+
+#footer{
+    height: 4.5vh;
+    background: rgb(207, 172, 106);
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer p{
+    line-height: 4.5vh;
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
